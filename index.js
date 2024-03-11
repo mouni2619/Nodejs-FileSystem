@@ -55,7 +55,7 @@ app.get("/list-files", (req, res) => {
   });
 });
 
-// Default route for handling 404 errors
+// Default route for handling errors like 404
 app.get('/*', (req, res) => {
   res.status(404).send(`<h1 style=text-align:center>4️⃣0️⃣4️⃣ Page not found 🤕</h1>`);
 });
